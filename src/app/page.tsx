@@ -4,7 +4,7 @@ function Page() {
   return (
     <div>
       <h1>Page</h1>
-      <Link href="#">
+      <Link href="src/app/page#">
         About
       </Link>
     </div>

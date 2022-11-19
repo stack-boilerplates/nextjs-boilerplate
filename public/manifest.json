@@ -1,0 +1,7 @@
+{
+  "name": "Boilerplate",
+  "short_name": "Boilerplate",
+  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
+  "display": "fullscreen",
+  "start_url": "/"
+}

@@ -10,6 +10,7 @@
     "prepare": "husky install",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
+    "test:ci": "jest --runInBand",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
     "generate": "yarn plop --plopfile generators/plopfile.js"

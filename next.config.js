@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    appDir: true
+    appDir: false
+  },
+  compiler: {
+    styledComponents: true
   }
 }
 

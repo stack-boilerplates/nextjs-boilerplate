@@ -1,7 +1,9 @@
+import { Wrapper } from './styles'
+
 const Main = () => (
-  <main>
+  <Wrapper>
     <h1>Boilerplate</h1>
-  </main>
+  </Wrapper>
 )
 
 export default Main

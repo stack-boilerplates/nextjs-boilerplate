@@ -28,7 +28,6 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.2",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
     "@storybook/addon-links": "^6.5.13",
@@ -45,7 +44,6 @@
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
-    "babel-loader": "^8.3.0",
     "eslint": "^8.27.0",
     "eslint-config-next": "13.0.4",
     "eslint-config-prettier": "^8.5.0",

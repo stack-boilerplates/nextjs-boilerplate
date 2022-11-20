@@ -1,11 +1,19 @@
-import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { AppProps } from 'next/app'
+
+import { ThemeProvider } from 'styled-components'
 
 import GlobalStyles from 'styles/global'
+import { lightTheme, darkTheme } from 'styles/theme'
+
+import useDarkMode from 'use-dark-mode'
 
 function App({ Component, pageProps }: AppProps) {
+  const dark = useDarkMode(false)
+  const theme = dark.value ? darkTheme : lightTheme
+
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Head>
         <title>Boilerplate</title>
         <link rel="shortcut icon" href="#" />
@@ -18,8 +26,9 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
+      <button onClick={dark.toggle}>Switch Mode</button>
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }
 

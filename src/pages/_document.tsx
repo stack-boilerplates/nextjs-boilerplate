@@ -39,6 +39,7 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head />
         <body>
+          {/*<script src="/noflash.js" /> remove flash for darkmode */}
           <Main />
           <NextScript />
         </body>

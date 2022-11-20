@@ -1,5 +1,7 @@
 import { RouterContext } from 'next/dist/shared/lib/router-context'
-import GlobalStyles from '../src/styles/global'
+import GlobalStyles from 'styles/global'
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "styles/theme";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -16,9 +18,9 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <>
+    <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
       <Story />
-    </>
+    </ThemeProvider>
   )
 ]
